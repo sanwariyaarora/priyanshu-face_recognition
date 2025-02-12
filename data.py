@@ -53,7 +53,7 @@ def decode_jpeg(image_buffer, scope=None):
     # adjust_* ops all require this range for dtype float.
     image = tf.image.convert_image_dtype(image, dtype=tf.float32)
     return image
-
+#This function, decode_jpeg, is used to decode a JPEG image stored as a binary string and convert it into a 3D float Tensor suitable for further processing in TensorFlow
 def distort_image(image, height, width):
 
   # Image processing for training the network. Note the many random
